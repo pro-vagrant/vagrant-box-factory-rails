@@ -12,5 +12,6 @@ sudo puppet module install gajdaw-ruby
 sudo puppet module install gajdaw-rails
 sudo puppet module install gajdaw-environment
 sudo puppet module install gajdaw-ubuntu
+sudo puppet module install gajdaw-nodejs
 
 

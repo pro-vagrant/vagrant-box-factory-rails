@@ -8,3 +8,5 @@ class { ruby: }
 class { rails:
     require => Class['ruby']
 }
+
+class { nodejs: }

@@ -10,3 +10,5 @@ class { rails:
 }
 
 class { nodejs: }
+
+class { bundle_install: }

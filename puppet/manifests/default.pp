@@ -11,6 +11,7 @@ class { rails:
 
 class { nodejs: }
 
-class { bundle_install:
+class { 'bundle_install':
+    repo    => 'https://github.com/pro-vagrant/songs-rails-app.git',
     require => Class['ruby', 'rails', 'nodejs']
 }

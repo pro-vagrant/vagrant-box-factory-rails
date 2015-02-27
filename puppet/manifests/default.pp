@@ -11,4 +11,6 @@ class { rails:
 
 class { nodejs: }
 
-class { bundle_install: }
+class { bundle_install:
+    require => Class['ruby', 'rails', 'nodejs']
+}

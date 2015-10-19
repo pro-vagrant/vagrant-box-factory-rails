@@ -4,7 +4,7 @@ echo "Install Puppet modules..."
 
 # To install latest versions use one command:
 #
-#     sudo puppet module install gajdaw-symfony
+#     sudo puppet module install gajdaw-rails
 #
 
 sudo puppet module install puppetlabs-stdlib --version 4.6.0 --force

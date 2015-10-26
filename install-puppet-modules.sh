@@ -7,13 +7,19 @@ echo "Install Puppet modules..."
 #     sudo puppet module install gajdaw-rails
 #
 
-sudo puppet module install puppetlabs-stdlib --version 4.6.0 --force
-sudo puppet module install gajdaw-ruby --version 0.5.3 --force
-sudo puppet module install gajdaw-diverse_functions --version 0.1.1 --force
-sudo puppet module install gajdaw-rails --version 0.2.0 --force
-sudo puppet module install gajdaw-environment --version 0.5.0 --force
-sudo puppet module install gajdaw-ubuntu --version 0.1.13 --force
-sudo puppet module install gajdaw-nodejs --version 0.2.2 --force
-sudo puppet module install gajdaw-bundle_install --version 0.1.1 --force
-sudo puppet module install gajdaw-vcsrepository --version 0.1.3 --force
+sudo puppet module install puppetlabs-stdlib
+sudo puppet module install puppetlabs-apt
+sudo puppet module install puppetlabs-apache
+sudo puppet module install puppetlabs-mysql
+sudo puppet module install maestrodev-wget
+sudo puppet module install gajdaw-ruby
+sudo puppet module install gajdaw-diverse_functions
+sudo puppet module install gajdaw-rails
+sudo puppet module install gajdaw-environment
+sudo puppet module install gajdaw-ubuntu
+sudo puppet module install gajdaw-nodejs
+sudo puppet module install gajdaw-bundle_install
+sudo puppet module install gajdaw-vcsrepository
+sudo puppet module install gajdaw-php5
+sudo puppet module install gajdaw-phpmyadmin
 

@@ -8,8 +8,6 @@ class { 'ubuntu':
     stage => setup;
 }
 
-package { 'libmysqlclient-dev': }
-
 class { '::mysql::server':
     root_password    => "this-is-SECRET",
 }

@@ -1,35 +1,12 @@
 include stdlib
 include environment
 include apt
-include php5
-
 
 class { 'ubuntu':
     stage => setup;
 }
 
-class { '::mysql::server':
-    root_password    => "this-is-SECRET",
-}
-
-include ::apache::mod::rewrite
-
-class { 'apache':
-    mpm_module    => prefork,
-    user          => "vagrant",
-    group         => "vagrant",
-    default_vhost => false,
-    require       => Class['php5'];
-}
-
-class { '::apache::mod::php':
-    path => "${::apache::params::lib_path}/libphp5.so",
-}
-
-include phpmyadmin
-class {'phpmyadmin::vhost':
-    require => Class['environment']
-}
+include phpmyadmin::complete
 
 class { ruby: }
 

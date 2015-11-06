@@ -24,6 +24,7 @@ class { 'bundle_install':
 }
 
 package { 'mailutils': ensure => present }
+package { 'mutt': ensure => present }
 
 file { 'mailbox for vagrant user':
     ensure  => present,

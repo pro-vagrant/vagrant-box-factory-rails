@@ -15,4 +15,5 @@ sudo puppet module install gajdaw-environment
 sudo puppet module install gajdaw-nodejs
 sudo puppet module install gajdaw-bundle_install
 sudo puppet module install gajdaw-phpmyadmin
+sudo puppet module install example42-postfix
 

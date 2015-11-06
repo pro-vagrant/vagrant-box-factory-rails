@@ -15,6 +15,12 @@ class { rails:
     require => Class['ruby']
 }
 
+$new_gems = [
+    'rubysl-optparse',
+    'jira-ruby',
+]
+rails::gems { $new_gems: }
+
 class { nodejs: }
 
 class { 'bundle_install':
